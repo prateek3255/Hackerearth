@@ -1,10 +1,25 @@
 import java.io.UnsupportedEncodingException;
 import java.util.*;
 public class test implements Comparator<Integer>{
-	@Override
+	
+	static Integer intarray[]={1,2,3,4,5};
 	 public int compare(Integer o1, Integer o2) {
        return o1.compareTo(o2);
    }
+	
+	public static <E> void inverse(E inputArray[])
+    {
+        int i,low=0,hi=intarray.length-1;
+		Integer temp;
+        while(low<hi)
+        {
+            temp=intarray[low];
+            intarray[low]=intarray[hi];
+            intarray[hi]=temp ;
+            low++;hi--;
+        }    
+
+    }
 
 	public static void main(String[] args) {
 		/*int max = 0;
@@ -12,19 +27,19 @@ public class test implements Comparator<Integer>{
         int maxEnd = -1;
         int currentStart = 0;
         int maxSoFar = 0;*/
-        int arr[]={1,7,2,4,8,3,5,9};
-        
-        Arrays.sort(arr);
-        Integer[] intArray = new Integer[] {
-                new Integer(15),
-                new Integer(9),
-                new Integer(16),
-                new Integer(2),
-                new Integer(30)
-            };
+//        int arr[]={1,7,2,4,8,3,5,9};
+//        
+//        Arrays.sort(arr);
+//        Integer[] intArray = new Integer[] {
+//                new Integer(15),
+//                new Integer(9),
+//                new Integer(16),
+//                new Integer(2),
+//                new Integer(30)
+//            };
 
             // Sorting int Array in descending order
-            Arrays.sort(intArray, Collections.reverseOrder());
+//            Arrays.sort(intArray, Collections.reverseOrder());
          
             // Displaying elements of int Array
         /*    System.out.println("Int Array Elements in reverse order:");
@@ -128,7 +143,7 @@ public class test implements Comparator<Integer>{
            /* String s="hello world";
             System.out.println(s.substring( s.length()-2));
 	*/
-            int i= 10 + + 11 - - 12 + + 13 - - 14 + + 15;
+//            int i= 10 + + 11 - - 12 + + 13 - - 14 + + 15;
             //System.out.println(i);
            /* int m[]=new int[2];
             m[0]=1;
@@ -166,13 +181,20 @@ public class test implements Comparator<Integer>{
 //            }
 //            double d=in.nextDouble();
 //            int q=(int)d;
-            Scanner in=new Scanner(System.in);
-            int n=in.nextInt();
-            in.nextLine();
-            String s=in.nextLine();
-            String s1=in.nextLine();
-            System.out.println(s.indexOf('$'));
-            System.out.println(s1.indexOf('$'));   
+//            Scanner in=new Scanner(System.in);
+//            int n=in.nextInt();
+//            in.nextLine();
+//            String s=in.nextLine();
+//            String s1=in.nextLine();
+//            System.out.println(s.indexOf('$'));
+//            System.out.println(s1.indexOf('$'));
+//            double x=Math.sqrt(4);
+//            String m=""+x;
+//            int y=2;
+//            char c=m.charAt(x);
+		int m=28777;
+		String s=""+m;
+            System.out.println(s.indexOf("8"));
 	}
 
 }
